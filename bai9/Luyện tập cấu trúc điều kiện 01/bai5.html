@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemBaiKiemTra = +prompt('Nhập vào điểm bài kiềm tra');
+    let diemThiGiuaKy = +prompt('Nhập vào điểm bài kiềm tra');
+    let diemThiCuoiKy = +prompt('Nhập vào điểm bài kiềm tra');
+    let Sum = ( diemBaiKiemTra * 0.6 + diemThiGiuaKy * 0.3 + diemThiCuoiKy * 0.1 );
+    if ( Sum >= 8.5 ){
+        alert('Học lực: giỏi');
+    } else if (Sum >= 7 ) {
+        alert('Học lực: Khá');
+    } else if (Sum >= 5) {
+        alert('Học lực: Trung bình');
+    } else {
+        alert('Học lực: yếu');
+    }
+
+</script>
+</body>
+</html>

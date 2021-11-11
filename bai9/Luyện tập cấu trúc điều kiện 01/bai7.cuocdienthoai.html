@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let time = parseFloat(prompt( 'Thời gian gọi là:' ));
+    let money;
+    if ( time >= 10 ) {
+        alert('cước điện thoại là: '+ time*1200 + 'VNĐ');
+    } else if (time >= 7 ) {
+        alert('cước điện thoại là: '+ time*1400 + 'VNĐ');
+    } else if (time >= 5 ) {
+        alert('cước điện thoại là: '+ time*1700 + 'VNĐ');
+    } else if (time >= 3 ) {
+        alert('cước điện thoại là: '+ time*1800 + 'VNĐ');
+    } else if (time >= 2 ) {
+        alert('cước điện thoại là: '+ time*2000 + 'VNĐ');
+    } else {
+        alert('cước điện thoại là: 3000 VND')
+    }
+</script>
+</body>
+</html>
