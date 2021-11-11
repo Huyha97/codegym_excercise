@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<!--bài 1:  Câu lệnh để hiển thị hộp thoại là: prompt(" Nhập nội dung cần nhập:  ");-->
+<!--cú pháp hiển thị tên tôi trong hộp thoại: prompt('Hà Đăng Huy')
+
+
+
+
+<!--Bài 2-->
+<!--Câu lệnh để nhận giá trị từ một hộp thoại là hành động gán giá trị của hộp thoại cho một biến-->
+<!--<script>-->
+<!--let a = prompt('Nhập giá trị của số a')-->
+<!--alert(a**2)-->
+<!--</script>-->
+
+<!--bài 3:-->
+<!--Câu lệnh nhận giá trị từ 1 ô: document.getElementBtId-->
+
+<input type="text" id="button1" >
+<input type="text" id="button2">
+<button type = button onclick="abc()">click here </button>
+<h1 id="theh1"> result </h1>
+
+<script>
+function abc() {
+    let a = parseFloat(document.getElementById("button1").value);
+    let b = parseFloat(document.getElementById("button2").value);
+    let sum = a * b;
+    document.getElementById("theh1").innerHTML = 'Result:' + sum
+}
+</script>
+<!--Bài 4-->
+<!--&lt;!&ndash;bài 4&ndash;&gt;-->
+<!--câu a,-->
+<h2 id="theh2"> result </h2>
+<input type="text" id="id4">
+<button  onclick="button4()">Click</button>
+<script>
+    function button4() {
+        let a = parseFloat(document.getElementById("id4").value);
+        let S = a * a;
+        let P = 4 * a;
+        document.getElementById("theh2").innerHTML = 'Diện tích hình vuông là:' + S + ' Chu vi hình vuông là ' + P
+
+    }
+</script>
+<!--câu b-->
+
+    <h2 id="theh3"> result3 </h2>
+    <input type="text" id="id4a">
+    <input type="text" id="id4b">
+        <button onClick="button4b()">Click</button>
+<script>
+    function button4() {
+    let a = parseFloat(document.getElementById("id4a").value);
+    let b = parseFloat(document.getElementById("id4b").value);
+    let tich = a * a;
+    let mu = a ** b;
+        document.getElementById("theh3").innerHTML = 'a^2=' + tich + 'và' + 'a^b=' + mu
+    }
+</script>
+
+</body>
+</html>
