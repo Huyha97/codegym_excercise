@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập vào số lượng phần tử: ")
+    let array = new Array(number)
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt("Nhập phần tử thứ " + (i + 1) + " : ")
+    }
+    console.log(array)
+    let a = prompt('nhập kí tự bất kì')
+    let flag = false
+    function display () {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if( a === arr[i]) {
+                flag = true;
+                count++;
+            }
+        }
+        if(count !== 0) {
+            alert(count);
+        }
+        else {
+            alert(-1);
+        }
+    }
+    display(array)
+</script>
+</body>
+</html>

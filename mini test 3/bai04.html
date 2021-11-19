@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="theh1"></h1>
+<p id="thep"></p>
+<script>
+    let number = +prompt("Nhập vào số lượng phần tử: ")
+    let array = new Array(number)
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt("Nhập phần tử thứ " + (i + 1) + " : ")
+    }
+    console.log(array)
+    let count3 = 0
+    let count5 = 0
+    let flag = false
+    for (let j = 0; j < array.length; j++)
+
+        if (array[j] % 3 === 0){
+            flag = true;
+            count3 ++;
+            console.log("số lượng phần tử chia hết cho 3 là: " + count3 + "số lượng phần tử không chia hết cho 3 là: " + array.length - count3  )
+        }
+        if (array[j] % 5 === 0){
+            flag = true;
+            count5 ++;
+            console.log("số lượng phần tử chia hết cho 5 là: " + count5)
+        }
+        if (count3>count5) {
+            document.getElementById("theh1").innerHTML = "C1021H1";
+        } if (count3<count5)
+    {
+        document.getElementById("thep").innerHTML = "Helloworld";
+    }
+
+</script>
+</body>
+</html>
