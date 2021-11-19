@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text">
+<button>Tính số ngày</button>
+<br> <br> <br>
+<input type="text">
+<button>Tính số ngày</button>
 </body>
 </html>
+<script>
+    let month =+prompt('Nhập tháng bạn cần tính số ngày:');
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            alert(31);
+            break;
+        case 2:
+            alert('Tháng 2 có 28 hoặc 29 ngày')
+
+
+    }
+</script>

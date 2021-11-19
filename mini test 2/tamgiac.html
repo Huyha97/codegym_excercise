@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title></title>
 </head>
 <body>
-$END$
+<!--e.	Nhập vào a, b, c, kiểm tra xem a, b, c có phải là 3 cạnh của:-->
+<!--i.	1 tam giác?-->
+<!--ii.	1 tam giác cân?-->
+<!--iii.	1 tam giác đều?-->
+<!--iv.	1 tam giác vuông?-->
+<input type="text" id="so1">
+<input type="text" id="so2">
+<input type="text" id="so3">
+<button type="button" onclick="button1()" id="id1()">click</button>
+<script>
+    function button1() {
+        let a = parseFloat( document.getElementById('so1').value);
+        let b = parseFloat( document.getElementById('so2').value);
+        let c = parseFloat( document.getElementById('so3').value);
+
+    if (a< b+c && b< a + c && c < a + b ) {
+        if ( a*a === b*b + c*c || b*b === a*a + c*c || c*c === a*a + b*b ) {
+            alert('a,b,c là 3 cạnh tam giác vuông');
+        } else if ( a === b || b === c || c === a) {
+            alert('a,b,c là 3 cạnh tam giác cân');
+        } else if (a === b === c) {
+            alert(' a,b,c là 3 cạnh tam giác đều')
+        }
+    } else {
+        alert('a,b,c khÔng là độ dài 3 cạnh tam giác')
+    }
+    }
+</script>
+
+
 </body>
 </html>

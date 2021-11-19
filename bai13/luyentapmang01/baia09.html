@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let num1 = +prompt("Nhập vào số lượng ptu của mảng: ");
+let manga = new Array(num1);
+for (let i = 0; i < manga.length; i++) {
+manga[i] = +prompt("Nhập vào phần tử thứ " + (i+1) + ": ")
+};
+let num2 = +prompt("Nhập vào số lượng ptu của mảng: ");
+let mangb = new Array(num2);
+for (let j = 0; j < mangb.length; j++) {
+mangb[j] = +prompt("Nhập vào phần tử thứ " + (j+1) + ": ");
+};
+let num3 = +prompt("Nhập vào số lượng ptu của mảng: ");
+let mangc = new Array(num3);
+for (let k = 0; k < mangc.length; k++) {
+mangc[k] = +prompt("Nhập vào phần tử thứ " + (k+1) + ": ");
+};
+let mangc = manga.concat(mangb);
+console.log(mangc);
+
+</script>
+</body>
+</html>

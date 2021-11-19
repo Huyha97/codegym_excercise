@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n1 = 0;
+    let n2  = 1;
+    let next_term =0;
+    document.write("0" + "</br>" + "1" + "</br>" );
+    for (let i = 1; i < 19 ; i++) {
+        next_term = n1 + n2;
+        n1 = n2;
+        n2 = next_term;
+        document.write( next_term + "</br>");
+    }
+</script>
+</body>
+</html>

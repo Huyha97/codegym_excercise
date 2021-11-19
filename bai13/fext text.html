@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="fake()" style="text-align: center;">
+<h1>Faking Textarea on Typing</h1>
+<form>
+<label>
+    <textarea id="txt" cols="30" rows="5" ></textarea>
+</label>
+</form>
+<script>
+    let array = [];
+    let str = "";
+    array [1] = 'T';
+    array [2] = 'O';
+    array [3] = 'I';
+    array [4] = ' ';
+    array [5] = 'L';
+    array [6] = 'A';
+    array [7] = ' ';
+    array [8] = 'H';
+    array [9] = 'O';
+    array [10] = 'C';
+    array [11] = ' ';
+    array [12] = 'V';
+    array [13] = 'I';
+    array [14] = 'E';
+    array [15] = 'N';
+    array [16] = ' ';
+    array [17] = 'C';
+    array [18] = 'O';
+    array [19] = 'D';
+    array [20] = 'E';
+    array [21] = ' ';
+    function fake() {
+        let text = document.getElementById("txt").value;
+        let j = text.length;
+        if (j > 0)
+        {
+            for (let i =1; i <= j ; i++)
+            {
+                str = str + array[i];
+                if (i === 21)
+                {
+                    document.getElementById("txt").value = "";
+                    str = "";
+                }
+            }
+        }
+           document.getElementById("txt").value = str;
+        str ="";
+        setTimeout("fake()",1);
+    }
+
+</script>
+</body>
+</html>

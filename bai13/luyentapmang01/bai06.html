@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bai06 = [1,2,3,4,5,-6,-7,-8,-9,-10];
+    let check = true;
+    let x = +prompt("nhap vao day mot so nguyen bat ky: ");
+    for (let i = 0; i < bai06.length; i++) {
+        if (x === bai06[i]) {
+            check = false;
+        }
+    } if (check) {
+        alert("V is not in the array");
+    } else  {
+        alert("V is in the array");
+    }
+</script>
+</body>
+</html>

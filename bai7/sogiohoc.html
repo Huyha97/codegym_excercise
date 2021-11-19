@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let time= +prompt('mot ngay ban code bao nhieu gio???');
+    if  (time < 8) {
+        alert('Ban ko phai la hoc vien codegym');
+    } else if (time === 8){
+        alert('Chuc mung! ban la hoc vien codegym');
+    } else if (time < 10 ){
+        alert('Ban can no luc hon nua!');
+    } else if (time < 12 ){
+        alert('Ban dang lam rat tot!');
+    } else if (time < 14 ){
+        alert('Ban xung dang co 10 nguoi yeu!');
+    } else if (time < 16 ){
+        alert('Ban can no luc hon nua!');
+    } else {
+        alert('Lay dia bay va tro ve hanh tinh cua minh di');
+    }
+</script>
 </body>
 </html>

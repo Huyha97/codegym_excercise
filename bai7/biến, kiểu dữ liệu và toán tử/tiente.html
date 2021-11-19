@@ -5,28 +5,29 @@
     <title>Title</title>
 </head>
 <body>
-<input type="abc" id="dauvao">
-<select name="" id="select1">
-    <option value="a">VND</option>
-    <option value="b">USD</option>
+<input type="text" id="dauvao">
+<select  id="select1">
+    <option value="1">VND</option>
+    <option value="23000">USD</option>
 </select>
-<select name="" id="select2">
-    <option value="a">VND</option>
-    <option value="b">USD</option>
+<select id="select2">
+    <option value="1">VND</option>
+    <option value="23000">USD</option>
 </select>
 <button onclick="xyz()">Convert</button>
+<br>
+<p id="result">result</p>
 <script>
     function xyz() {
-    let giatrivao = document.getElementById('dauvao').value;
-    let select1 = document.getElementById('select1').value;
-    let select2 = document.getElementById('select2').value;
-    if(select1 == select2){
-        alert(giatrivao);
+        let giatrivao = parseInt( document.getElementById('dauvao').value);
+        let select1 =   parseInt( document.getElementById('select1').value);
+        let select2 = parseInt( document.getElementById('select2').value);
+        let a = giatrivao * select1/ select2;
+        alert(a)
     }
-    if (select1 == "a" && select2 == "b") {
-        alert(giatrivao/24000);
-    }
-    }
+
+
+
 </script>
 </body>
 </html>

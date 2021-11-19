@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10 ; i++) {
+        let num = parseInt(prompt('nhap cac phan tu trong mang: '));
+        arr.push(num);
+    }
+    console.log(arr);
+    let v = parseInt(prompt('phan tu so nguyen V: '));
+    for ( let j = 0 ; j < arr.length ; j++ ) {
+        if ( v === arr[j] ){
+            arr.splice(j,1);
+            arr.push(0);
+            break;
+        }
+    }
+    document.write(arr);
+</script>
+</body>
+</html>
