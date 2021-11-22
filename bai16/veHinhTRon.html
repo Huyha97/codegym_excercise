@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // cach 01:
+    class hinhTron{
+        radius
+    constructor(radius) {
+            this.radius = radius;
+    }
+    getRadius() {
+            return this.radius;
+    }
+    setRadius(radiusSet) {
+            this.radius = radiusSet;
+    }
+    getArea() {
+            return this.radius*this.radius*Math.PI;
+    }
+    }
+    let Dientich = new hinhTron(1);
+    Dientich.setRadius(5);
+    Dientich.setRadius(10);
+    console.log(Dientich.getArea())
+</script>
+</body>
+</html>
