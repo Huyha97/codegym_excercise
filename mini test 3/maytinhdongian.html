@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2"><label for="input1"><input type="text" id="input1"></label></td>
+        <td colspan="2"><label for="input2"><input type="text" id="input2"></label></td>
+    </tr>
+    <tr>
+        <td><button type="button"  onclick="button1()">Addition</button></td>
+        <td><button type="button"  onclick="button2()">Subtraction</button></td>
+        <td><button type="button"  onclick="button3()">multiplication</button></td>
+        <td><button type="button"  onclick="button4()">Division</button></td>
+    </tr>
+</table>
+<script>
+    function button1() {
+        let a = parseInt(document.getElementById("input1").value) ;
+        let b = parseInt(document.getElementById("input2").value) ;
+        let sum = a + b;
+     document.getElementById("result").innerText = sum;
+    }
+    function button2() {
+        let a = parseInt(document.getElementById("input1").value) ;
+        let b = parseInt(document.getElementById("input2").value) ;
+        let sub = a - b;
+        document.getElementById("result").innerText = sub;
+    }
+    function button3() {
+        let a = parseInt(document.getElementById("input1").value) ;
+        let b = parseInt(document.getElementById("input2").value) ;
+        let mul = a * b;
+        document.getElementById("result").innerText = mul;
+    }
+    function button4() {
+        let a = parseInt(document.getElementById("input1").value) ;
+        let b = parseInt(document.getElementById("input2").value) ;
+        let div = a / b;
+        document.getElementById("result").innerText = div ;
+    }
+</script>
+<h2 id="result"></h2>
+</body>
+</html>

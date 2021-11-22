@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let admin = prompt("nhap ten dang nhap cua ban vao day");
+if (admin === 'Admin' ) {
+    let password = prompt("nhap mat khau cua ban vao day");
+    if (password === 'TheMaster') {
+        alert("welcome");
+    } else if ( password === 'null') {
+        alert("Canceled");
+    } else {
+        alert("Wrong password");
+    }
+} else if (admin === 'null') {
+    alert("canceled");
+} else {
+    alert("i don't know");
+}
+</script>
+</body>
+</html>

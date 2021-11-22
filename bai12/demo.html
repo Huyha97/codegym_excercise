@@ -5,25 +5,42 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Sample Screen:</h1>
-<input type="text" id="ip">
-<button type="button" id="buttonAdd" value="Add" onclick="add_elements_to_array()">Add</button>
-<button type="button" id="buttonDisplay" value="Display" onclick="a()">Display</button>
-<div id="result"></div>
-<script>
-    let x = 0;
-    let array = Array();
-function add_elements_to_array() {
-    array[x] = document.getElementById("ip").value;
-    alert("Element: " + array[x] + "Added at index" + x);
-    document.getElementById("ip").value = " ";
-}
-    function a(){
-        let e = "<hr/>";
-        for (let i = 0; i < array.length; i++) {
-            e+= "element" + i + " = " + array[i] + "<br/>";
-        } document.getElementById("result").innerHTML = e;
-}
-</script>
+<table>
+    <tr>
+        <td><Label>amount</Label></td>
+        <td><label for="from">from</label></td>
+        <td><label for="to">to</label></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><label><input type="text" id="input"></label></td>
+        <td><select  id="from">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select></td>
+        <td><select  id="to">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select></td>
+        <td><button type="button" onclick="display()">Convert</button></td>
+    </tr>
+    <script>
+        function display() {
+            let input = document.getElementById("input").value;
+            let from = document.getElementById("from").value;
+            let to = document.getElementById("to").value;
+            if (from === to) {
+                document.getElementById("result").innerText = input;
+            } else if (from === "VND" && to === "USD") {
+                document.getElementById("result").innerText = input/23000;
+            } else {
+                document.getElementById("result").innerText = input*23000;
+            }
+        }
+    </script>
+
+</table>
+<h2 id="result"></h2>
+
 </body>
 </html>
