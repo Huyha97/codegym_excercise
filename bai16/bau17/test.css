@@ -1,0 +1,405 @@
+body {
+    font-family: Tahoma;
+    font-size: 15px;
+    width: 100%;
+    margin: 0px auto;
+}
+.contact {
+    width: 100%;
+    background: #742f1c;
+}
+.phone-address {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-left: 40px;
+}
+.login-register {
+    flex-basis: 10%;
+    margin-left: 5px;
+}
+.icon-login {
+    content: url("image/ic-login.png");
+    margin-left: 10px;
+}
+.icon-mobile {
+    content: url("image/mobile.png");
+    margin-right: 5px;
+}
+.bold {
+    font-weight: 600;
+}
+.magin-address{
+    margin-left: 5px;
+}
+.hotline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 70%;
+    width: 1140px;
+    margin: 0 auto;
+    height: 40px;
+    color: white;
+}
+
+.info-block {
+    width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    align-items: center;
+}
+
+#brand {
+    height: 106px;
+    width: 214px;
+}
+
+div.image {
+    width: 100%;
+    height: 100%;
+    content: url("image/bactomm.png") ;
+}
+
+.option {
+    display: flex;
+    width: 64%;
+    height: 100%;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-page {
+    width: 100%;
+    height: 50px;
+    background: #742f1c;
+}
+.fa {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.fa-shopping-bag:before {
+    content: url("image/tuisach.png");
+}
+.bg {
+    background: #62bb46;
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 15px;
+    line-height: 36px;
+    color: white;
+}
+
+.car {
+    content: url("image/oto.png");
+    margin-right: 10px;
+}
+.letters {
+    content: url("image/thu.png");
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.clock {
+    content: url("image/dongho.png");
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.menu {
+    max-width: 250px;
+    width: 100%;
+}
+.carousel {
+    min-width: 874px;
+    height: 412px;
+    left: 30px;
+}
+.carousel-inner {
+    max-width: 850px;
+}
+.d-block {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.import {
+    border-radius: 15px;
+    height: 20px;
+}
+.icon-magnifyingGlass {
+    content: url("image/icon-kinhlup.png");
+    margin-right: 100px;
+}
+.ic-address {
+    content: url("image/icon-address.png");
+    margin-left: 20px;
+}
+.product-list {
+    margin-top: 45px;
+}
+.category {
+    background: #742f1c;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    max-width: 216px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.list {
+    margin: 0;
+    line-height: 24px;
+    padding: 10px;
+}
+.list-boder {
+    border-bottom: 1px solid;
+}
+.list-boder1 {
+    border: 1px solid;
+    padding: 60px 20px 20px;
+    width: 360px;
+}
+.title {
+    height: 100%;
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 10px;
+}
+.text-between {
+    text-align: center;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #742f1c;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #fff;
+    margin-top: -95px;
+}
+.flower {
+    content: url("image/hoala.png");
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.PaternalGrandFather {
+    content: url("image/onglao.png");
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.qrcode {
+    content: url("image/qrcode.png");
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.icon-muiten {
+    content: url("image/muiten.png");
+}
+.bg-green {
+    background: #62bb46;
+    font-size: 17px;
+    padding: 12px;
+    width: 115px;
+    border: none;
+    color: white;
+}
+
+/*combo sổ xuống*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropbtn {
+    background-color: #742f1c;
+    font-size: 15px;
+    color: white;
+    padding: 11px;
+    border: none;
+    width: 157px;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #62bb46;}
+/*hết combo sổ xuống*/
+.hi {
+    color: #742f1c;
+    border-bottom: 2px solid;
+    margin-right: 85px;
+}
+.list-category {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 600;
+}
+.text-color {
+    color: #62bb46;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-detail {
+    width: 262px;
+    border: #ebebeb 1px solid;
+    border-radius: 15px;
+}
+.hastag {
+    display: flex;
+    justify-content: space-between;
+
+}
+.MelonFruit {
+    content: url("image/muophuong.png");
+    padding: 20px;
+    width: 100%;
+}
+.cucumber {
+    content: url("image/duachuot.png");
+    padding: 20px;
+    width: 100%;
+}
+.BlackCarp {
+    content: url("image/catram.png");
+    padding: 20px;
+    width: 100%;
+}
+.banana {
+    content: url("image/quachuoi.png");
+    padding: 20px;
+    width: 100%;
+}
+.eggs {
+    content: url("image/trung.png");
+    padding: 20px;
+    width: 100%;
+}
+.salmon {
+    content: url("image/cahoi.png");
+    padding: 20px;
+    width: 100%;
+}
+.porkleg {
+    content: url("image/gio.png");
+    padding: 20px;
+    width: 100%;
+}
+.spinach {
+    content: url("image/rauden.png");
+    padding: 20px;
+    width: 100%;
+}
+.potato {
+    content: url("image/khoailang.png");
+    padding: 20px;
+    width: 100%;
+}
+.chicken {
+    content: url("image/thitga.png");
+    padding: 20px;
+    width: 100%;
+}
+.Logan {
+    content: url("image/quanhan.png");
+    padding: 20px;
+    width: 100%;
+}
+.Tofu {
+    content: url("image/dauphu.png");
+    padding: 20px;
+    width: 100%;
+}
+
+.bean {
+    content: url("image/dautrach.png");
+    padding: 20px;
+    width: 100%;
+}
+.carrot {
+    content: url("image/carot.png");
+    padding: 20px;
+    width: 100%;
+}
+.veal {
+    content: url("image/thitbe.png");
+    padding: 20px;
+    width: 100%;
+}
+.watermelon {
+    content: url("image/duahau.png");
+    padding: 20px;
+    width: 100%;
+}
+.HotSpringRolls {
+    content: url("image/banhgio.png");
+    padding: 20px;
+    width: 100%;
+}
+
+.ChoySum {
+    content: url("image/raucaingong.png");
+    padding: 20px;
+    width: 100%;
+}
+.spinacia-oleracea {
+    content: url("image/raumongtoi.png");
+    padding: 20px;
+}
+.beef {
+    content: url("image/thitdiembo.png");
+    padding: 10px;
+}
+.dumplings {
+    content: url("image/banhbao.png");
+    padding: 30px;
+    margin-bottom: -121px;
+}
+
+.orange {
+    content: url("image/quacam.png");
+    padding: 10px;
+}
+
+.margin-auto {
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
